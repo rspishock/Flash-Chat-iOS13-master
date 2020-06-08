@@ -28,12 +28,10 @@ class RegisterViewController: UIViewController {
                     print(e.localizedDescription)  // Provides localized errors based off of users language settings
                 } else {
                     // Navigate to ChatCiewController
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
             }
-            
         }
-        
     }
     
 }
